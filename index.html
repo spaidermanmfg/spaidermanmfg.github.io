@@ -71,6 +71,63 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-markdow" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/06/02/markdow/" class="article-date">
+  <time class="dt-published" datetime="2022-06-02T02:47:34.740Z" itemprop="datePublished">2022-06-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/06/02/markdow/">渗透状态</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>2022.4.35</p>
+<h1 id="1-请求方法："><a href="#1-请求方法：" class="headerlink" title="1.请求方法："></a>1.请求方法：</h1><p>post<br>put<br>get<br>options<br>trace</p>
+<h1 id="2-URL"><a href="#2-URL" class="headerlink" title="2. URL"></a>2. URL</h1><p>统一资源定位符<br>协议http：&#x2F;&#x2F;ip地址｜域名信息：端口号&#x2F;资源路径信息&#x2F;xx&#x2F;静态资源（jpg,css）｜动态资源(java,php)</p>
+<h1 id="3-请求报文"><a href="#3-请求报文" class="headerlink" title="3.请求报文"></a>3.请求报文</h1><p>请求消息头</p>
+<h1 id="4-响应报文"><a href="#4-响应报文" class="headerlink" title="4.响应报文"></a>4.响应报文</h1><p>起始行<br>响应行<br>空行<br>响应体<br>Location：用于重定向跳转</p>
+<h1 id="4-状态码"><a href="#4-状态码" class="headerlink" title="4.状态码"></a>4.状态码</h1><p>100 continue,服务端收到请求，但请求不完整<br>1xx： 提供信息<br>2xx： 请求被成功提交<br>3xx： 客户端被重定向到其他资源<br>301，永久跳转<br>302，临时变化<br>304，浏览器缓存过<br>4xx： 请求包含某种错误，客户端<br>400， 无效提交<br>403， 禁止访问<br>404， 请求资源不存在<br>413， 请求信息过长<br>5xx： 服务器执行请求时遇到错误，服务端<br>500，应用程序错误<br>503，无法响应</p>
+<h1 id="5-cookie"><a href="#5-cookie" class="headerlink" title="5.cookie"></a>5.cookie</h1><ul>
+<li>介绍<br>状态，类似身份证，服务器了解到是谁来访问，针对不同的用户的访问，做出不同的响应<br>用于区分不同客户端的请求，纯文本信息<br>例：视频网站再次登陆记录上次浏览时长</li>
+<li>属性<br>1.cookie域<br>区分不同网站颁发的cookie<br>cookie中加入domain属性，domain&#x3D;<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a><br>2.cookie路径<br>解决同一网站不同页面颁发的cookie<br>例：b站不同视频观看记录的不同记录</li>
+<li>类型<br>1.会话cookie<br>结束回话删除cookie<br>2.持久cookie<br>保存在服务器磁盘里<br>3.第三方cookie<br>根据用户喜好进行内容推广使用<h1 id="6-漏洞扫描"><a href="#6-漏洞扫描" class="headerlink" title="6. 漏洞扫描"></a>6. 漏洞扫描</h1></li>
+<li>扫描原理<br>1.链路检测扫描<br>TTL：生存周期<br>TTL&#x3D;64，windows,linux系统<br>TTL&#x3D;128，xp,2000,2003系统<br>TTL&#x3D;255,交换机<br>2.端口检测扫描<br>1-65535 TCP&#x2F;UDP<br>telnet-检查端口是否开放<br>3.操作系统检测扫描<br>是否有漏洞<br>4.弱口令扫描探测<br>密码相关信息是否简单<br>5.漏洞评估检测</li>
+<li>2.扫描技术手段<br>![截屏2022-02-27 14.34.43](..&#x2F;..&#x2F;..&#x2F;..&#x2F;var&#x2F;folders&#x2F;rn&#x2F;r6_l2xln77j0bv69j2c_5rg00000gp&#x2F;T&#x2F;TemporaryItems&#x2F;NSIRD_screencaptureui_Zxk9Ck&#x2F;截屏2022-02-27 14.34.43.png)<br>1.开放扫描<br>TCP<br>2.半开放扫描<br>SYN<br>3.隐蔽扫描<br>FIN<br>4.扫射扫描<br>Ping<br>UDP<br>5.其他扫描<ul>
+<li>3.漏洞扫描工具<br>X-scan<br>AppScan—-专门对Web服务进行扫描的<br>AWVS—-针对web服务进行扫描的<br>#7. Web渗透攻防化境搭建</li>
+</ul>
+</li>
+<li>虚拟主机系统部署（vmware，虚拟主机创建，虚拟主机网络桥接，虚拟软件功能-快照&#x2F;克隆&#x2F;镜像文件加载ova）<br>windows 2003&#x2F;2008<br>windows 7&#x2F;10<br>Linux kial&#x2F;centos</li>
+<li>构建网站服务架构平台<br>windwos：IIS+ASP架构平台<br>Linux： LNMP、LAMP、LNMT，linux，ngiux，mysql，php，tomcat<br>windows： LNMP，LAMP，LNMT</li>
+<li>在网站平台部署可攻防测试项目代码<br>bwapp 靶场环境<br>上传代码信息<br>初始化导入数据库新<br>访问网站页面测试<br>pikachu<br>dvwa<br>phpcms<br>mysql注入环境</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/06/02/markdow/" data-id="cl3wf9iw70000g9s8a5vza8d4" data-title="渗透状态" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Inter" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/02/28/Inter/" class="article-date">
@@ -116,7 +173,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/28/Inter/" data-id="cl3wex0ls0001o6s8b0xsh01q" data-title="渗透说" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/28/Inter/" data-id="cl3wf5amz0000ras85tweas3g" data-title="渗透说" class="article-share-link">Share</a>
       
       
       
@@ -158,7 +215,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/28/FirstBlog/" data-id="cl3wex0lk0000o6s88q3x75np" data-title="第一个博客文章" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/28/FirstBlog/" data-id="cl3wf5an70001ras80le81abj" data-title="第一个博客文章" class="article-share-link">Share</a>
       
       
       
@@ -209,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/02/28/hello-world/" data-id="cl3wex0lt0002o6s8hxlda9c8" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/02/28/hello-world/" data-id="cl3wf5an90002ras88q889kj9" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -239,7 +296,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">June 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">February 2022</a></li></ul>
     </div>
   </div>
 
@@ -250,6 +307,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/06/02/markdow/">渗透状态</a>
+          </li>
         
           <li>
             <a href="/2022/02/28/Inter/">渗透说</a>
