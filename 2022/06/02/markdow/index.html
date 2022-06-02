@@ -1,101 +1,69 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>渗透状态 | It&#39;s Min Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="2022.4.35 1.请求方法：postputgetoptionstrace 2. URL统一资源定位符协议http：&#x2F;&#x2F;ip地址｜域名信息：端口号&#x2F;资源路径信息&#x2F;xx&#x2F;静态资源（jpg,css）｜动态资源(java,php) 3.请求报文请求消息头 4.响应报文起始行响应行空行响应体Location：用于重定向跳转 4.状态码100 conti">
-<meta property="og:type" content="article">
-<meta property="og:title" content="渗透状态">
-<meta property="og:url" content="http://example.com/2022/06/02/markdow/index.html">
-<meta property="og:site_name" content="It&#39;s Min Blog">
-<meta property="og:description" content="2022.4.35 1.请求方法：postputgetoptionstrace 2. URL统一资源定位符协议http：&#x2F;&#x2F;ip地址｜域名信息：端口号&#x2F;资源路径信息&#x2F;xx&#x2F;静态资源（jpg,css）｜动态资源(java,php) 3.请求报文请求消息头 4.响应报文起始行响应行空行响应体Location：用于重定向跳转 4.状态码100 conti">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-06-02T02:47:34.740Z">
-<meta property="article:modified_time" content="2022-06-02T02:52:21.222Z">
-<meta property="article:author" content="Feng Min">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="It's Min Blog" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>blur</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel = "icon" href =  "https://i.pinimg.com/originals/4a/a5/df/4aa5df83115df6c96732a2d76ccb4f1b.jpg" type = "image/x-icon"> 
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
+<link rel="stylesheet" href="/css/styles.css">
+ 
 <meta name="generator" content="Hexo 6.0.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">It&#39;s Min Blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <link rel = "icon" href =  "https://i.pinimg.com/originals/4a/a5/df/4aa5df83115df6c96732a2d76ccb4f1b.jpg" type = "image/x-icon"> 
+<nav id="nav">
+  <header class="header">
+    <a href="/" class="header-title">
+      BLUR <i class="fa fa-fire" aria-hidden="true"></i>
+    </a>
+    
+  </header>
 
-      <div class="outer">
-        <section id="main"><article id="post-markdow" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/06/02/markdow/" class="article-date">
-  <time class="dt-published" datetime="2022-06-02T02:47:34.740Z" itemprop="datePublished">2022-06-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      渗透状态
-    </h1>
   
 
-      </header>
+  <div class="nav-wrapper">
+    <div class="menu">
+      <a href="/" class="nav-menu z-active">HOME</a>
+      <a href="/about" class="nav-menu">ABOUT</a>
+      <a href="/archives" class="nav-menu">ARCHIVE</a>
+    </div>
+
+    <div class="icons">
+      <a target="_blank" rel="noopener" href="https://github.com/kiten46087" class="nav-icon" >
+        <i class="fa fa-github-alt" aria-hidden="true"></i>
+      </a>
+      <a href="" class="nav-icon">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>
+      <a href="" class="nav-icon">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+      </a>
+    </div>
+
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>2022.4.35</p>
+  </div>
+</nav>
+    
+<!-- <hr class="hr-divide-header" align="left"> -->
+      <a name="top"></a>
+
+<section class="article">  
+  <h2 class="article-title">
+    渗透状态 
+  </h2>
+  <p class="article-date">
+    2022/6/2 
+  </p>
+
+  <hr class="hr-divide">
+
+  <div class="article-content">
+    <p>2022.4.35</p>
 <h1 id="1-请求方法："><a href="#1-请求方法：" class="headerlink" title="1.请求方法："></a>1.请求方法：</h1><p>post<br>put<br>get<br>options<br>trace</p>
 <h1 id="2-URL"><a href="#2-URL" class="headerlink" title="2. URL"></a>2. URL</h1><p>统一资源定位符<br>协议http：&#x2F;&#x2F;ip地址｜域名信息：端口号&#x2F;资源路径信息&#x2F;xx&#x2F;静态资源（jpg,css）｜动态资源(java,php)</p>
 <h1 id="3-请求报文"><a href="#3-请求报文" class="headerlink" title="3.请求报文"></a>3.请求报文</h1><p>请求消息头</p>
@@ -114,122 +82,32 @@
 <li>构建网站服务架构平台<br>windwos：IIS+ASP架构平台<br>Linux： LNMP、LAMP、LNMT，linux，ngiux，mysql，php，tomcat<br>windows： LNMP，LAMP，LNMT</li>
 <li>在网站平台部署可攻防测试项目代码<br>bwapp 靶场环境<br>上传代码信息<br>初始化导入数据库新<br>访问网站页面测试<br>pikachu<br>dvwa<br>phpcms<br>mysql注入环境</li>
 </ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/06/02/markdow/" data-id="cl3wf9iw70000g9s8a5vza8d4" data-title="渗透状态" class="article-share-link">分享</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2022/02/28/Inter/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">后一篇</strong>
-      <div class="article-nav-title">渗透说</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">二月 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/06/02/markdow/">渗透状态</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/28/Inter/">渗透说</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/28/FirstBlog/">第一个博客文章</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/28/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
+ 
+    <hr class="hr-divide">
+    <div class="article-footer">
+      <a href="#top">back to top</a>
     </div>
   </div>
 
   
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 Feng Min<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+</section>  
+      <!-- Footer -->
+      <!-- <h1>This is the footer.ejs file</h1> -->
+
+<footer class="footer">
+  <p style="margin-top: 0px;">
+    Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    Created by <a href="">@Qitian Lin</a>
+  </p>
+</footer>  
     </div>
-  </div>
-</footer>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+    <!-- After footer file to store js of Bootstrap -->
+    <!-- <h1>This is the after-footer ejs file</h1> -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+  </body>
 
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
 </html>
